@@ -1,0 +1,7 @@
+jobs:
+  plan:
+    steps:
+      - uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: '1.7.4'
+      - run: terraform plan

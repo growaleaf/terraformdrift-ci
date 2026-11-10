@@ -1,0 +1,37 @@
+{
+  "name": "terraformdrift-ci",
+  "version": "1.0.0",
+  "description": "Fail CI when your Terraform version claims disagree: .terraform-version, a terraform{} block's required_version constraint, every Dockerfile's FROM hashicorp/terraform:X.Y, and every GitHub Actions workflow's hashicorp/setup-terraform terraform_version all checked against each other.",
+  "license": "SEE LICENSE IN LICENSE",
+  "bin": {
+    "terraformdrift-ci": "./cli.js"
+  },
+  "main": "cli.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node test/run.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/growaleaf/terraformdrift-ci.git"
+  },
+  "keywords": [
+    "terraform",
+    "opentofu",
+    "version",
+    "tfenv",
+    "required_version",
+    "docker",
+    "github-actions",
+    "ci",
+    "continuous-integration",
+    "drift"
+  ],
+  "files": [
+    "cli.js",
+    "README.md",
+    "LICENSE"
+  ]
+}
